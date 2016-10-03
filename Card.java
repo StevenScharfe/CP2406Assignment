@@ -51,7 +51,7 @@ public class Card {
         ///////////////
 
         //This is where i assign each individual cards' there respective values.
-
+        //Check dictionary to see what cleavage, abundance and value values are.
 
 
         ///////////////
