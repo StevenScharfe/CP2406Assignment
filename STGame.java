@@ -65,7 +65,7 @@ public class STGame {
                     if (choice.equals("play")) {
                         System.out.println("Card position in hand: ");
                         cardChoice = input.nextInt();
-                        chooseCardCategory(players[i][cardChoice]); //how does this work
+                        //chooseCardCategory(players[i][cardChoice]); //how does this work
                         //i've completely tunnel visioned on this
                         //this is halting my progress
                         players[i].removeCard(cardChoice);
@@ -79,8 +79,13 @@ public class STGame {
                     // if not, bot passes turn
                     //display bots move
                     System.out.println(i);
-                }
-            }//each time the game rotates players, at the end of their move check if hand is empty
+                }if(players[i].cardCount() == 0){
+                    gameIsOn = false;
+                    System.out.println(players[i].getName() + " wins");
+                    break;
+                }//each time the game rotates players, at the end of their move check if hand is empty
+            }
+
         }
     }
 
