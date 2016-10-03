@@ -8,8 +8,8 @@ public class STGame {
     private int dealerId;
     private Player[] players;
     private Deck deck;
-    private  static final int NUM_CARDS_TO_DEAL = 8;
-    int yourPlayerId;
+    private static final int NUM_CARDS_TO_DEAL = 8;
+    private int yourPlayerId;
 
     private int hardness;
     private int gravity;
@@ -66,14 +66,21 @@ public class STGame {
                         System.out.println("Card position in hand: ");
                         cardChoice = input.nextInt();
                         chooseCardCategory(players[i][cardChoice]); //how does this work
+                        //i've completely tunnel visioned on this
+                        //this is halting my progress
                         players[i].removeCard(cardChoice);
                     }
 
                 } else {
                     //bot move
+                    //bot looks at playing category
+                    //bot looks at cards and compares current category number with card numbers
+                    // then chooses lowest possible card
+                    // if not, bot passes turn
+                    //display bots move
                     System.out.println(i);
                 }
-            }
+            }//each time the game rotates players, at the end of their move check if hand is empty
         }
     }
 
