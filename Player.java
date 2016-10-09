@@ -27,4 +27,10 @@ public class Player {
         cards.remove(choice);
 
     }
+    public int cardCount(){
+        return cards.size();
+    }
+    public String getName(){
+        return playerId;
+    }
 }
