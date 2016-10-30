@@ -22,6 +22,15 @@ public class Card {
         this.name = "";
 
     }
+
+    public String getName(){
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public String toString(){
         return "NAME: " + name + " ID:" + id + " H:" + hardness + " G:" + gravity + " C:" + cleavage + " A:" + abundance + " V:" + value;
     }

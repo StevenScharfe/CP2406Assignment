@@ -29,7 +29,7 @@ public class Main_dos {
         game.dealRandomCardsToEachPlayer();
         game.selectYouAsPlayer();
         Player humanPlayer = game.getHumanPlayer();
-        showPlayer(humanPlayer);
+        //showPlayer(humanPlayer);
 
         //game.playGame();
         //game.showHumanPlayerCards();

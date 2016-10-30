@@ -6,6 +6,7 @@ import java.util.*;
 public class STGame {
     private int numPlayers;
     private int dealerId;
+    public static STGame currentGame;
     private Player[] players;
     private Deck deck;
     private static final int NUM_CARDS_TO_DEAL = 8;
@@ -21,6 +22,11 @@ public class STGame {
     public STGame(int numPlayers){
         this.numPlayers = numPlayers;
         deck = new Deck();
+        currentGame = this;
+    }
+
+    public boolean validCardToPlay(Card card){
+        return true;
     }
 
     public void selectDealer(){

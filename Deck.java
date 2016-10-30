@@ -22,7 +22,7 @@ public class Deck {
             int idx = new Random().nextInt(cards.size());
             Card card = cards.remove(idx);
             ret.add(card);
-            System.out.println("card: " + card);
+            //System.out.println("card: " + card);
         }
         return ret;
     }

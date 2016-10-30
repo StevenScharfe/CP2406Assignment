@@ -15,6 +15,10 @@ public class Player {
         this.cards = cards;
     }
 
+    public ArrayList<Card> getCards(){
+        return cards;
+    }
+
     public String toString() {
         return "Player: " + playerId + "\n cards: " + cards;
     }
@@ -33,4 +37,6 @@ public class Player {
     public String getName(){
         return playerId;
     }
+
+
 }
