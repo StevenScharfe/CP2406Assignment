@@ -10,6 +10,7 @@ public class CardView extends JPanel {
         cardName = new JLabel(card.toString());
         add(cardName);
 //        ImageIcon image = new ImageIcon("C:\\Users\\Steven\\IdeaProjects\\Assignment2\\src\\images\\Slide01");
+        //forgot to add the file type (.jpg) when i was testing this up here                                ^
 //        JLabel imageLabel = new JLabel(image);
 //        add(imageLabel);
 //        imageLabel.setVisible(true);
